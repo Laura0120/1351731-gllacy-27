@@ -6,7 +6,12 @@
   </head>
   <body>
     <header>
-      <img src="img\gllacy-logo.svg" width="64" heigth="154" alt="Глейси" />
+      <img
+        src="img/gllacy-logo.svg"
+        width="154"
+        heigth="64"
+        alt="Логотип магазина Глейси"
+      />
       <nav>
         <ul>
           <li><a href="catalog.html">Каталог</a></li>
@@ -14,7 +19,7 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul>
-          <li><button type="button">Поиск</button></li>
+          <li><button type="button" class="visually-hidden">Поиск</button></li>
           <li><button type="button">Вход</button></li>
           <li><button type="button">Корзина</button></li>
         </ul>
@@ -23,25 +28,25 @@
       <p>8 812 450-25-25</p>
     </header>
     <main>
-      <h1>Магазина Глэйси</h1>
+      <h1>Магазина Глейси</h1>
       <section>
         <h2>Слайдер "Давайте оба"</h2>
         <img
-          src="img\ice-cream-1.png"
+          src="img/ice-cream-1.png"
           width="1045"
           heigth="881"
           alt="Крем-брюле и пломбир с малиновым джемом"
         />
         <p>Крем-брюле и пломбир с малиновым джемом</p>
         <img
-          src="img\ice-cream-2.png"
+          src="img/ice-cream-2.png"
           width="1055"
           heigth="859"
           alt="Шоколадный пломбир и лимонный сорбет"
         />
         <p>Шоколадный пломбир и лимонный сорбет</p>
         <img
-          src="img\ice-cream-3.png"
+          src="img/ice-cream-3.png"
           width="1079"
           heigth="854"
           alt="Пломбир с помадкой и клубничный щербет"
@@ -60,7 +65,7 @@
           При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
           банку малинового варенья бесплатно.
         </p>
-        <button type="button">Хочу варенье!</button>
+        <a href="#">Хочу варенье!</a>
       </section>
       <section>
         <p>Шоколадки даром!</p>
@@ -68,7 +73,7 @@
           При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
           шоколадной присыпки совершенно бесплатно.
         </p>
-        <button type="button">Хочу шоколадки!</button>
+        <a href="#">Хочу шоколадки!</a>
       </section>
       <section>
         <h2>Хиты продаж</h2>
@@ -77,7 +82,7 @@
             <a href="#">
               Сливочное с апельсиновым джемом и цитрусовой стружкой
               <img
-                src="img\product-1.jpg"
+                src="img/product-1.jpg"
                 width="267"
                 heigth="267"
                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
@@ -89,7 +94,7 @@
             <a href="#">
               Сливочно-кофейное с кусочками шоколада
               <img
-                src="img\product-2.jpg"
+                src="img/product-2.jpg"
                 width="267"
                 heigth="267"
                 alt="Сливочно-кофейное с кусочками шоколада"
@@ -101,7 +106,7 @@
             <a href="#">
               Сливочно-клубничное с присыпкой из белого шоколада
               <img
-                src="img\product-3.jpg"
+                src="img/product-3.jpg"
                 width="267"
                 heigth="267"
                 alt="Сливочно-клубничное с присыпкой из белого шоколада"
@@ -113,7 +118,7 @@
             <a href="#">
               Сливочное крем-брюле с карамельной подливкой
               <img
-                src="img\product-4.jpg"
+                src="img/product-4.jpg"
                 width="267"
                 heigth="267"
                 alt="Сливочное крем-брюле с карамельной подливкой"
@@ -125,7 +130,7 @@
       </section>
       <section>
         <h2>
-          Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
+          Магазин Глейси — это онлайн- и офлайн-магазин по продаже мороженого
           собственного производства на развес
         </h2>
         <p>
@@ -153,19 +158,30 @@
         <h2>Новое в нашем блоге</h2>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <article>
+      <form action="" method="post">
         <h2>Подписка на рассылку</h2>
-        <p>
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+        <label for="email"
+          >Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
           самого вкусного, что у нас происходит. Обещаем не спамить и не слать
           всякой ненужной ерунды. Честно =)
-        </p>
-        <input type="email" />
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@example.com"
+        />
+
         <button type="submit">Отправить</button>
-      </article>
+      </form>
       <section>
         <h2>Контакты</h2>
-        <img src="#" width="" heigth="" alt="Карта" />
+        <img
+          src="#"
+          width=""
+          heigth=""
+          alt="Адрес главного офиса и офлайн-магазина на карте"
+        />
         <div>
           <p>
             Адрес главного офиса и офлайн-магазина:
@@ -182,17 +198,89 @@
     </main>
     <footer>
       <ul>
-        <li><a href="#">Твиттр</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
+        <li>
+          <a href="#">
+            <img src="img/Twitter.svg" width="32" heigth="32" alt="Твиттeр"
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/insta.svg" width="32" heigth="32" alt="Инстаграм"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="img/facebook.svg" width="32" heigth="32" alt="Фейсбук"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="img/VK.svg" width="32" heigth="32" alt="Вконтакте"
+          /></a>
+        </li>
       </ul>
       <a href="#">Для поставщиков</a>
       <a href="#">О производстве</a>
       <a href="#">Наши документы</a>
       <a href="#">Экологические стандарты</a>
-      <img src="" width="" heigth="" alt="HTML Academy" />
-      <p>Сделано в <a href="">HTML Academy © 2019</a></p>
+      <p>Сделано в <a href="#">HTML Academy © 2019</a></p>
     </footer>
+    <section>
+      <h2>Личный кабинет</h2>
+      <form action="" method="post">
+        <label for="email_1">email</label>
+        <input
+          type="email"
+          name="email"
+          id="email_1"
+          placeholder="email@example.com"
+        />
+        <label for="password" placeholder=".......">Пароль</label>
+        <input type="password" name="password" id="password" />
+        <button type="submit">Войти</button>
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </form>
+    </section>
+    <section>
+      <h2>Каталог</h2>
+      <select name="catalog" size="5">
+        <option value="new">Новинки</option>
+        <option value="Creamy">Сливочное</option>
+        <option value="Sherbets">Щербеты</option>
+        <option value="Fruit_ice">Фруктовый лед</option>
+        <option value="Melorin">Мелорин</option>
+      </select>
+    </section>
+    <section>
+      <h2>Поле поиска</h2>
+      <label for="search">Поле поиска</label>
+      <input type="search" name="search" id="search" />
+    </section>
+    <section>
+      <h2>Форма обратной связи</h2>
+      <form action="" method="post">
+        <p>Мы обязательно вам ответим!</p>
+        <button type="button">Закрыть</button>
+        <label for="name">Имя Фамилия</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
+        <label for="email_2">email</label>
+        <input
+          type="email"
+          name="email"
+          id="email_2"
+          placeholder="email@example.com"
+        />
+        <label for="appeal_text">Текст обращения</label>
+        <textarea
+          name="appeal_text"
+          id="appeal_text"
+          cols=""
+          rows="5"
+          placeholder="В свободной форме"
+        ></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
