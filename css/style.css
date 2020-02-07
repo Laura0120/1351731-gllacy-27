@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Bold", arial;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #849d8f;
+  background-position: top center;
+}
+ul {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a,
+.footer a {
+  color: #ffffff;
+  font-weight: normal;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ffbc9e;
+}
+.visually-hidden {
+  display: none;
+}
+.basket-icon {
+  background-image: url(../img/basket-icon.svg);
+}
+.header-contact {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+.header-contact span {
+  font-size: 22px;
+  line-height: 24px;
+}
+/*.catalog:visited {
+background-color: ;
+border: ;
+}*/
+.features {
+  background-image: url(../img/waffles.jpg);
+  background-repeat: no-repeat;
+}
+.features-list:first-of-type li:first-of-type {
+  list-style-image: url(../img/ice_cream_icon.svg);
+}
+.features-list:first-of-type li:nth-of-type(2) {
+  list-style-image: url(../img/list_icon.svg);
+}
+.features-list:nth-of-type(2) li:first-of-type {
+  list-style-image: url(../img/cow_icon.svg);
+}
+.features-list:nth-of-type(2) li:nth-of-type(2) {
+  list-style-image: url(../img/thermometer_icon.svg);
+}
+.features h2 {
+  font-family: "Roboto Medium", arial;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+.features-item {
+  font-family: "Roboto Regular", arial;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+.new-in-blog {
+  background-image: url(../img/ice_cream_background.jpg);
+  background-repeat: no-repeat;
+}
+.new-in-blog h2 {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #323232;
+}
+
+.new-in-blog a {
+  font-family: "Roboto Medium", arial;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #323232;
+}
+.newsletter-subscription {
+  background-image: url(../img/mail_background.png);
+  background-repeat: no-repeat;
+}
+
+/*.newsletter-subscription-form {
+background-color: #f8f7f4;
+}*/
+.newsletter-subscription-form p {
+  font-family: "Roboto Regular", arial;
+  font-size: 16px;
+  text-align: left;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+.button {
+  text-decoration: none;
+  font-family: "Roboto Bold", arial;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  border: none;
+}
+
+/*.button:hover,
+.button:focus,
+.button:active {
+  background-color:;
+}*/
+
+.footer {
+  font-size: 13px;
+  text-align: left;
+  line-height: 16px;
+}
+.copyright-logo {
+  background-image: url(../img/logo-htmlacademy.svg);
+}
+
+.product-item a {
+  font-family: "Roboto Medium", arial;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  line-height: 22px;
+  text-align: center;
+}
+.product-item p {
+  font-size: 45px;
+  line-height: 45px;
+}
