@@ -27,121 +27,123 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="logo"
-        src="img/gllacy-logo.svg"
-        width="154"
-        heigth="64"
-        alt="Логотип магазина Глейси"
-      />
-      <nav>
-        <ul class="site-navigation">
-          <li class="catalog">
-            <a href="catalog.html">Каталог</a>
-            <ul class="submenu visually-hidden">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html"> Сливочное </a></li>
-              <li><a href="#"> Щербеты </a></li>
-              <li><a href="#"> Фруктовый лед </a></li>
-              <li><a href=""> Мелорин </a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a href="#">Доставка и оплата</a></li>
-          <li class="nav-item"><a href="#">О Компании</a></li>
-        </ul>
+      <div class="header-navigation">
+        <img
+          class="logo"
+          src="img/gllacy-logo.svg"
+          width="154"
+          heigth="64"
+          alt="Логотип магазина Глейси"
+        />
+        <nav>
+          <ul class="site-navigation">
+            <li class="catalog">
+              <a href="catalog.html">Каталог</a>
+              <ul class="submenu visually-hidden">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="catalog.html"> Сливочное </a></li>
+                <li><a href="#"> Щербеты </a></li>
+                <li><a href="#"> Фруктовый лед </a></li>
+                <li><a href=""> Мелорин </a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#">Доставка и оплата</a></li>
+            <li class="nav-item"><a href="#">О Компании</a></li>
+          </ul>
 
-        <div class="user-navigation">
-          <div class="header-search">
-            <span class="header-search-icon">
-              <img src="img/magnifier.svg" alt="поиск" />
-            </span>
-            <div class="header-search-form visually-hidden">
-              <form action="" method="get">
-                <label for="search"> Поле поиска </label>
-                <input type="search" name="search" id="search" />
-              </form>
+          <div class="user-navigation">
+            <div class="header-search">
+              <span class="header-search-icon">
+                <img src="img/magnifier.svg" alt="поиск" />
+              </span>
+              <div class="header-search-form visually-hidden">
+                <form action="" method="get">
+                  <label for="search"> Поле поиска </label>
+                  <input type="search" name="search" id="search" />
+                </form>
+              </div>
             </div>
-          </div>
 
-          <div class="header-entrance">
-            <button type="button">Вход</button>
-            <div class="header-entrance-form visually-hidden">
-              <form action="" method="post">
-                <label for="email_1">email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email_1"
-                  placeholder="email@example.com"
-                />
-                <label for="password" placeholder=".......">Пароль</label>
-                <input type="password" name="password" id="password" />
-                <button type="submit">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
-            </div>
-          </div>
-          <div class="nav-item">
-            <div class="basket-icon"></div>
-            <button type="button">
-              <span class="visually-hidden">Корзина</span>
-              2 товара
-            </button>
-          </div>
-          <div class="basket-with-goods visually-hidden">
-            <table>
-              <tr>
-                <td><button type="button">Удалить</button></td>
-                <td>
-                  <img
-                    src="ice_cream_basket_1.jpg"
-                    width="33"
-                    heigth="33"
-                    alt=""
+            <div class="header-entrance">
+              <button type="button">Вход</button>
+              <div class="header-entrance-form visually-hidden">
+                <form action="" method="post">
+                  <label for="email_1">email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email_1"
+                    placeholder="email@example.com"
                   />
-                </td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><button type="button">Удалить</button></td>
-                <td>
-                  <img
-                    src="ice_cream_basket_2.jpg"
-                    width="33"
-                    heigth="33"
-                    alt=""
-                  />
-                </td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-            </table>
+                  <label for="password" placeholder=".......">Пароль</label>
+                  <input type="password" name="password" id="password" />
+                  <button type="submit">Войти</button>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </form>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div class="basket-icon"></div>
+              <button type="button">
+                <span class="visually-hidden">Корзина</span>
+                2 товара
+              </button>
+            </div>
+            <div class="basket-with-goods visually-hidden">
+              <table>
+                <tr>
+                  <td><button type="button">Удалить</button></td>
+                  <td>
+                    <img
+                      src="ice_cream_basket_1.jpg"
+                      width="33"
+                      heigth="33"
+                      alt=""
+                    />
+                  </td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button type="button">Удалить</button></td>
+                  <td>
+                    <img
+                      src="ice_cream_basket_2.jpg"
+                      width="33"
+                      heigth="33"
+                      alt=""
+                    />
+                  </td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
 
-            <div>
-              <span>Итого:</span>
-              <span>750 руб.</span>
-              <a href="#">Оформить заказ</a>
+              <div>
+                <span>Итого:</span>
+                <span>750 руб.</span>
+                <a href="#">Оформить заказ</a>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <p class="header-contact">
-        С 10 до 20, ежедневно <br>
+        С 10 до 20, ежедневно <br />
         <span> 8 812 450-25-25 </span>
       </p>
     </header>
-    <main>
-      <ul>
+    <main class="container">
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li>Сливочное</li>
       </ul>
       <h1>Сливочное мороженое</h1>
-      <section>
+      <section class="filters">
         <h2>Фильтры</h2>
         <form action="" method="get">
           <div>
@@ -199,8 +201,8 @@
         </form>
       </section>
       <section>
-        <h2>Ассортимент</h2>
-        <ul>
+        <h2 class="visually-hidden">Ассортимент</h2>
+        <ul class="catalog-list">
           <li>
             <div class="product-item">
               <h3>
@@ -449,7 +451,7 @@
             </div>
           </li>
         </ul>
-        <ul>
+        <ul class="pagination-list">
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
@@ -481,14 +483,16 @@
           </a>
         </li>
       </ul>
-      <ul class="footer-informetion">
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-      </ul>
-      <ul class="footer-informetion">
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
+      <div class="footer-informetion">
+        <ul>
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
       <div class="copyright">
         <div class="copyright-logo"></div>
         <p>
