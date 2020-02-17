@@ -26,60 +26,77 @@
         </a>
         <nav class="header-navigation">
           <ul class="site-navigation list-style">
-            <li class="catalog">
+            <li class="header-navigation-catalog">
               <a href="catalog.html" class="link">Каталог</a>
-              <ul class="submenu visually-hidden">
-                <li><a href="#" class="link">Новинки</a></li>
-                <li><a href="catalog.html" class="link">Сливочное</a></li>
-                <li><a href="#" class="link">Щербеты</a></li>
-                <li><a href="#" class="link">Фруктовый лед</a></li>
-                <li><a href="" class="link">Мелорин</a></li>
+
+              <ul
+                class="header-navigation-catalog-submenu visually-hidden list-style"
+              >
+                <li><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="">Мелорин</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#" class="link">Доставка и оплата</a>
             </li>
-            <li class="nav-item"><a href="#" class="link">О Компании</a></li>
+            <li><a href="#" class="link">О Компании</a></li>
           </ul>
 
           <div class="user-navigation">
             <div class="header-search">
-              <span class="header-search-icon">
-                <img src="img/magnifier.svg" alt="поиск" />
-              </span>
+              <img src="img/magnifier.svg" alt="поиск" />
               <div class="header-search-form visually-hidden">
                 <form action="" method="get">
                   <label for="search" class="visually-hidden"
                     >Поле поиска</label
                   >
-                  <input type="search" name="search" id="search" />
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    class="input"
+                    autofocus
+                  />
                 </form>
               </div>
             </div>
-
             <div class="header-entrance">
-              <button type="button" class="icon-entry">Вход</button>
+              <button type="button">
+                <span class="header-entrance-inscription">Вход</span>
+              </button>
               <div class="header-entrance-form visually-hidden">
                 <form action="" method="post">
-                  <label for="email_1">email</label>
+                  <label for="email-1" class="visually-hidden">email</label>
                   <input
                     type="email"
                     name="email"
-                    id="email_1"
+                    id="email-1"
                     placeholder="email@example.com"
+                    class="input"
                   />
-                  <label for="password" placeholder=".......">Пароль</label>
-                  <input type="password" name="password" id="password" />
-                  <button type="submit">Войти</button>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
+                  <label for="password" class="visually-hidden">Пароль</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="••••••••"
+                    class="input"
+                  />
+                  <button type="submit" class="button">Войти</button>
+                  <div class="header-entrance-form-link">
+                    <a href="#" class="link">Забыли пароль?</a>
+                    <a href="#" class="link">Новая регистрация</a>
+                  </div>
                 </form>
               </div>
             </div>
-            <div class="nav-item">
-              <button type="button" class="icon-basket">
+            <div class="header-basket">
+              <button type="button">
                 <span class="visually-hidden">Корзина</span>
-                Пусто
+                <span class="header-basket-inscription">Пусто</span>
               </button>
             </div>
           </div>
@@ -293,6 +310,7 @@
                   name="email"
                   id="email"
                   placeholder="email@example.com"
+                  class="input"
                 />
                 <button type="submit" class="button">Отправить</button>
               </form>
@@ -371,28 +389,40 @@
     </footer>
 
     <section class="feedback-form visually-hidden">
-      <h2>Форма обратной связи</h2>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="" method="post">
-        <p>Мы обязательно вам ответим!</p>
-        <button type="button">Закрыть</button>
-        <label for="name">Имя Фамилия</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
-        <label for="email_2">email</label>
+        <h3>Мы обязательно вам ответим!</h3>
+        <button type="button" class="feedback-form-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <label for="name" class="visually-hidden">Имя Фамилия</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Имя Фамилия"
+          class="input"
+        />
+        <label for="email_2" class="visually-hidden" class="visually-hidden"
+          >email</label
+        >
         <input
           type="email"
           name="email"
           id="email_2"
           placeholder="email@example.com"
+          class="input"
         />
-        <label for="appeal_text">Текст обращения</label>
+        <label for="appeal_text" class="visually-hidden">Текст обращения</label>
         <textarea
           name="appeal_text"
           id="appeal_text"
           cols=""
           rows="5"
           placeholder="В свободной форме"
+          class="input"
         ></textarea>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button">Отправить</button>
       </form>
     </section>
   </body>
