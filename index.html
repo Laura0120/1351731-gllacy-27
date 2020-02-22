@@ -13,155 +13,150 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <a href="index.html">
-          <img
-            class="logo"
-            src="img/gllacy-logo.svg"
-            width="154"
-            heigth="64"
-            alt="Логотип магазина Глейси"
-          />
-        </a>
-        <nav class="header-navigation">
-          <ul class="site-navigation list-style">
-            <li class="header-navigation-catalog">
+    <header class="header container">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="img/gllacy-logo.svg"
+          width="154"
+          heigth="64"
+          alt="Логотип магазина Глейси"
+        />
+      </a>
+      <nav class="header-navigation">
+        <ul class="site-navigation list-style">
+          <div class="header-navigation-catalog">
+            <li class="site-navigation-item header-navigation-catalog-button">
               <a href="catalog.html" class="link">Каталог</a>
-
               <ul
                 class="header-navigation-catalog-submenu visually-hidden list-style"
               >
-                <li><a href="#">Новинки</a></li>
-                <li></li>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="">Мелорин</a></li>
+                <li class="header-navigation-catalog-submenu-item">
+                  <a href="#">Новинки</a>
+                </li>
+                <li class="header-navigation-catalog-submenu-item">
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+                <li class="header-navigation-catalog-submenu-item">
+                  <a href="#">Щербеты</a>
+                </li>
+                <li class="header-navigation-catalog-submenu-item">
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li class="header-navigation-catalog-submenu-item">
+                  <a href="">Мелорин</a>
+                </li>
               </ul>
             </li>
-            <li>
-              <a href="#" class="link">Доставка и оплата</a>
-            </li>
-            <li><a href="#" class="link">О Компании</a></li>
-          </ul>
-
-          <div class="user-navigation">
-            <div class="header-search">
-              <div class="header-search-button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                >
-                  <image
-                    width="17"
-                    height="17"
-                    overflow="visible"
-                    xlink:href="Лупа.png"
-                  />
-                  <path
-                    fill="#FFF"
-                    d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"
-                  />
-                </svg>
-              </div>
-              <form
-                action=""
-                method="get"
-                class="header-search-form visually-hidden"
-              >
-                <label for="search" class="visually-hidden">Поле поиска</label>
-                <input
-                  type="search"
-                  name="search"
-                  id="search"
-                  placeholder="Крем-брюле"
-                  class="input"
-                  autofocus
-                />
-              </form>
-            </div>
-            <div class="header-entrance">
-              <button type="button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="21"
-                  height="19"
-                  viewBox="0 0 21 19"
-                >
-                  <image
-                    width="21"
-                    height="19"
-                    overflow="visible"
-                    xlink:href="Вход.png"
-                  />
-                  <g fill="#FFF">
-                    <path
-                      d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"
-                    />
-                    <path
-                      d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"
-                    />
-                  </g>
-                </svg>
-                <span class="header-entrance-inscription">Вход</span>
-              </button>
-              <div class="header-entrance-form visually-hidden">
-                <form action="" method="post">
-                  <label for="email-1" class="visually-hidden">email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email-1"
-                    placeholder="email@example.com"
-                    class="input"
-                  />
-                  <label for="password" class="visually-hidden">Пароль</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="••••••••"
-                    class="input"
-                  />
-                  <button type="submit" class="button">
-                    Войти
-                  </button>
-                  <div class="header-entrance-form-link">
-                    <a href="#" class="link">Забыли пароль?</a>
-                    <a href="#" class="link">Новая регистрация</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="header-basket">
-              <button type="button">
-                <span class="visually-hidden">Корзина</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                >
-                  <g fill="#FFF">
-                    <path
-                      d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"
-                    />
-                    <circle cx="6.984" cy="18" r="2" />
-                    <circle cx="15.984" cy="18" r="2" />
-                  </g>
-                </svg>
-
-                <span class="header-basket-inscription">Пусто</span>
-              </button>
-            </div>
           </div>
-        </nav>
-      </div>
+          <li class="site-navigation-item">
+            <a href="#" class="link">Доставка и оплата</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#" class="link">О Компании</a>
+          </li>
+        </ul>
+
+        <div class="user-navigation">
+          <div class="header-search user-navigation-item">
+            <div class="header-search-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+              >
+                <path
+                  fill="#FFF"
+                  d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"
+                />
+              </svg>
+            </div>
+            <form
+              action=""
+              method="get"
+              class="header-search-form visually-hidden"
+            >
+              <label for="search" class="visually-hidden">Поле поиска</label>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Крем-брюле"
+                class="input"
+                autofocus
+              />
+            </form>
+          </div>
+          <div class="header-entrance user-navigation-item">
+            <button type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="21"
+                height="19"
+                viewBox="0 0 21 19"
+              >
+                <g fill="#FFF">
+                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                  <path
+                    d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"
+                  />
+                </g>
+              </svg>
+              <span class="header-entrance-inscription">Вход</span>
+            </button>
+            <form
+              action=""
+              method="post"
+              class="header-entrance-form visually-hidden"
+            >
+              <label for="email-1" class="visually-hidden">email</label>
+              <input
+                type="email"
+                name="email"
+                id="email-1"
+                placeholder="email@example.com"
+                class="input"
+              />
+              <label for="password" class="visually-hidden">Пароль</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="••••••••"
+                class="input"
+              />
+              <button type="submit" class="button">
+                Войти
+              </button>
+              <div class="header-entrance-form-link">
+                <a href="#" class="link">Забыли пароль?</a>
+                <a href="#" class="link">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
+          <button type="button" class="header-basket user-navigation-item">
+            <span class="visually-hidden">Корзина</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="20"
+              viewBox="0 0 21 20"
+            >
+              <g fill="#FFF">
+                <path
+                  d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"
+                />
+                <circle cx="6.984" cy="18" r="2" />
+                <circle cx="15.984" cy="18" r="2" />
+              </g>
+            </svg>
+            <span class="header-basket-inscription">Пусто</span>
+          </button>
+        </div>
+      </nav>
       <p class="header-contact">
         С 10 до 20, ежедневно <br />
         <span> 8 812 450-25-25 </span>
@@ -169,49 +164,49 @@
     </header>
     <main>
       <h1 class="visually-hidden">Магазина Глейси</h1>
-      <div class="container">
-        <section class="slide">
-          <h2 class="visually-hidden">Слайдер "Давайте оба"</h2>
-          <div class="slide-one">
-            <img
-              src="img/ice-cream-1.png"
-              width="1045"
-              heigth="881"
-              alt="Крем-брюле и пломбирс малиновым джемом"
-            />
-            <div class="slide-one-discription">
-              <p>Крем-брюле и пломбир<br />с малиновым джемом</p>
-              <a href="#" class="button">Давайте оба!</a>
-            </div>
-          </div>
-          <div class="slide-two visually-hidden">
-            <img
-              src="img/ice-cream-2.png"
-              width="1055"
-              heigth="859"
-              alt="Шоколадный пломбир и лимонный сорбет"
-            />
-            <div>
-              <p>Шоколадный пломбир и лимонный сорбет</p>
-              <a href="#" class="button">Давайте оба!</a>
-            </div>
-          </div>
-          <div class="slide-three visually-hidden">
-            <img
-              src="img/ice-cream-3.png"
-              width="1079"
-              heigth="854"
-              alt="Пломбир с помадкой и клубничный щербет"
-            />
-            <p>Пломбир с помадкой и клубничный щербет</p>
+      <section class="slide">
+        <h2 class="visually-hidden">Слайдер "Давайте оба"</h2>
+        <div class="slide-one">
+          <img
+            src="img/ice-cream-1.png"
+            width="1045"
+            heigth="881"
+            alt="Крем-брюле и пломбирс малиновым джемом"
+          />
+          <div class="slide-one-discription">
+            <p>Крем-брюле и пломбир<br />с малиновым джемом</p>
             <a href="#" class="button">Давайте оба!</a>
           </div>
-          <ul>
-            <li><a href="#">слайд 1</a></li>
-            <li><a href="#">слайд 2</a></li>
-            <li><a href="#">слайд 3</a></li>
-          </ul>
-        </section>
+        </div>
+        <div class="slide-two visually-hidden">
+          <img
+            src="img/ice-cream-2.png"
+            width="1055"
+            heigth="859"
+            alt="Шоколадный пломбир и лимонный сорбет"
+          />
+          <div>
+            <p>Шоколадный пломбир и лимонный сорбет</p>
+            <a href="#" class="button">Давайте оба!</a>
+          </div>
+        </div>
+        <div class="slide-three visually-hidden">
+          <img
+            src="img/ice-cream-3.png"
+            width="1079"
+            heigth="854"
+            alt="Пломбир с помадкой и клубничный щербет"
+          />
+          <p>Пломбир с помадкой и клубничный щербет</p>
+          <a href="#" class="button">Давайте оба!</a>
+        </div>
+        <ul>
+          <li><a href="#">слайд 1</a></li>
+          <li><a href="#">слайд 2</a></li>
+          <li><a href="#">слайд 3</a></li>
+        </ul>
+      </section>
+      <div class="container">
         <div class="special-offers">
           <h2 class="visually-hidden">Акции</h2>
           <section class="special-offers-raspberries">
@@ -234,8 +229,8 @@
         <section>
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="bestseller-product">
-            <li>
-              <div class="product-item bestseller-product-item">
+            <li class="product-item bestseller-product-item">
+              <div class="product-item-overlay">
                 <a href="#">
                   <img
                     src="img/product-1.jpg"
@@ -246,17 +241,15 @@
                   <p>310 ₽/кг</p>
                 </a>
                 <h3>
-                  <a href="">
-                    Сливочное с апельсиновым джемом и цитрусовой стружкой
-                  </a>
+                  <a href="#" class="link"
+                    >Сливочное с апельсиновым джемом и цитрусовой стружкой</a
+                  >
                 </h3>
-                <div class="product-item-overlay visually-hidden">
-                  <button class="button">Быстрый просмотр</button>
-                </div>
+                <button class="button visually-hidden">Быстрый просмотр</button>
               </div>
             </li>
-            <li>
-              <div class="product-item bestseller-product-item"">
+            <li class="product-item bestseller-product-item">
+              <div class="product-item-overlay">
                 <a href="#">
                   <img
                     src="img/product-2.jpg"
@@ -266,14 +259,16 @@
                   />
                   <p>380 ₽/кг</p>
                 </a>
-                <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-                <div class="product-item-overlay visually-hidden">
-                  <button class="button">Быстрый просмотр</button>
-                </div>
+                <h3>
+                  <a href="#" class="link"
+                    >Сливочно-кофейное с кусочками шоколада</a
+                  >
+                </h3>
+                <button class="button visually-hidden">Быстрый просмотр</button>
               </div>
             </li>
-            <li>
-              <div class="product-item bestseller-product-item"">
+            <li class="product-item bestseller-product-item">
+              <div class="product-item-overlay">
                 <a href="#">
                   <img
                     src="img/product-3.jpg"
@@ -284,18 +279,16 @@
                   <p>355 ₽/кг</p>
                 </a>
                 <h3>
-                  <a href="#"
+                  <a href="#" class="link"
                     >Сливочно-клубничное с присыпкой из белого шоколада
                   </a>
                 </h3>
-                <div class="product-item-overlay">
-                  <button class="button">Быстрый просмотр</button>
-                </div>
+                <button class="button visually-hidden">Быстрый просмотр</button>
               </div>
             </li>
-            <li>
-              <div class="product-item bestseller-product-item"">
-                <a href="">
+            <li class="product-item bestseller-product-item">
+              <div class="product-item-overlay">
+                <a href="#">
                   <img
                     src="img/product-4.jpg"
                     width="267"
@@ -305,11 +298,11 @@
                   <p>415 ₽/кг</p>
                 </a>
                 <h3>
-                  <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
+                  <a href="#" class="link"
+                    >Сливочное крем-брюле с карамельной подливкой</a
+                  >
                 </h3>
-                <div class="product-item-overlay visually-hidden">
-                  <button class="button">Быстрый просмотр</button>
-                </div>
+                <button class="button visually-hidden">Быстрый просмотр</button>
               </div>
             </li>
           </ul>
@@ -349,7 +342,7 @@
         <div class="index-columns">
           <article class="new-in-blog">
             <h2>Новое в нашем блоге</h2>
-            <a href="#"> 10 способов сервировки фруктовых щербетов к столу </a>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </article>
           <article class="newsletter-subscription">
             <div class="newsletter-subscription-background">
@@ -377,34 +370,33 @@
             </div>
           </article>
         </div>
-
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <img
-            src="img/map.png"
-            alt="магазин на карте"
-            width="1200"
-            height="430"
-          />
-          <div class="contacts-content">
-            <p>
-              Адрес главного офиса<br />
-              и офлайн-магазина:<br />
-              <span
-                >ул. Большая Конюшенная<br />
-                19/8, Санкт-Петербург</span
-              >
-            </p>
-            <p>
-              Для заказов по телефону:<br />
-              <span>812 450-25-25</span><br />(с 10 до 20 ежедневно)
-            </p>
-            <a href="" class="button">Форма обратной связи</a>
-          </div>
-        </section>
       </div>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <img
+          src="img/map.png"
+          alt="магазин на карте"
+          width="1200"
+          height="430"
+        />
+        <div class="contacts-content">
+          <p>
+            Адрес главного офиса<br />
+            и офлайн-магазина:<br />
+            <span
+              >ул. Большая Конюшенная<br />
+              19/8, Санкт-Петербург</span
+            >
+          </p>
+          <p>
+            Для заказов по телефону:<br />
+            <span>812 450-25-25</span><br />(с 10 до 20 ежедневно)
+          </p>
+          <a href="" class="button">Форма обратной связи</a>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <ul class="social-networks list-style">
         <li>
           <a href="#" class="link">
@@ -447,12 +439,11 @@
         </p>
       </div>
     </footer>
-
     <section class="feedback-form visually-hidden">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="" method="post">
         <h3>Мы обязательно вам ответим!</h3>
-        <button type="button" class="feedback-form-close">
+        <button type="button" class="close">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <label for="name" class="visually-hidden">Имя Фамилия</label>
