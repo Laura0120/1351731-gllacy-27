@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
-
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -24,21 +22,19 @@
     <input class="visually-hidden" type="radio" id="product-3" name="toggle" />
     <div class="site-wrapper">
       <header class="header container">
-        <a href="index.html">
-          <img
-            class="logo"
-            src="img/gllacy-logo.svg"
-            width="154"
-            heigth="64"
-            alt="Логотип магазина Глейси"
-          />
-        </a>
+        <img
+          class="logo"
+          src="img/gllacy-logo.svg"
+          width="154"
+          height="64"
+          alt="Логотип магазина Глейси"
+        />
         <nav class="header-navigation">
-          <ul class="site-navigation list-style">
-            <div class="header-navigation-catalog">
-              <li class="site-navigation-item header-navigation-catalog-button">
+          <div class="site-navigation">
+            <div class="site-navigation-catalog">
+              <div class="site-navigation-item site-navigation-catalog-button">
                 <a href="catalog.html" class="link">Каталог</a>
-                <ul class="header-navigation-catalog-submenu list-style">
+                <ul class="site-navigation-submenu list-style">
                   <li class="submenu-item">
                     <a href="#">Новинки</a>
                   </li>
@@ -55,22 +51,20 @@
                     <a href="">Мелорин</a>
                   </li>
                 </ul>
-              </li>
+              </div>
             </div>
-            <li class="site-navigation-item">
+            <div class="site-navigation-item">
               <a href="#" class="link">Доставка и оплата</a>
-            </li>
-            <li class="site-navigation-item">
+            </div>
+            <div class="site-navigation-item">
               <a href="#" class="link">О Компании</a>
-            </li>
-          </ul>
-
+            </div>
+          </div>
           <div class="user-navigation">
             <div class="header-search user-navigation-item">
               <div class="header-search-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="17"
                   height="17"
                   viewBox="0 0 17 17"
@@ -81,7 +75,7 @@
                   />
                 </svg>
               </div>
-              <form action="" method="get" class="header-search-form">
+              <form action="/" method="get" class="header-search-form">
                 <label for="search" class="visually-hidden">Поле поиска</label>
                 <input
                   type="search"
@@ -96,7 +90,6 @@
               <button type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="21"
                   height="19"
                   viewBox="0 0 21 19"
@@ -112,7 +105,7 @@
                 </svg>
                 <span class="header-entrance-inscription">Вход</span>
               </button>
-              <form action="" method="post" class="header-entrance-form">
+              <form action="/" method="post" class="header-entrance-form">
                 <label for="email-1" class="visually-hidden">email</label>
                 <input
                   type="email"
@@ -159,8 +152,8 @@
           </div>
         </nav>
         <p class="header-contact">
-          С 10 до 20, ежедневно <br />
-          <span> 8 812 450-25-25 </span>
+          С 10 до 20, ежедневно<br />
+          <a href="tel:8 812 450-25-25" class="tel">8 812 450-25-25</a>
         </p>
       </header>
       <main>
@@ -195,7 +188,7 @@
           </section>
           <div class="special-offers">
             <h2 class="visually-hidden">Акции</h2>
-            <section class="special-offers-raspberries">
+            <section class="special-offers-raspberries special-offers-item">
               <h3>Малинка даром!</h3>
               <p>
                 При покупке 2 кг любого фруктового мороженого, добавим в ваш
@@ -203,7 +196,7 @@
               </p>
               <a href="#" class="button">Хочу варенье!</a>
             </section>
-            <section class="special-offers-chocolate">
+            <section class="special-offers-chocolate special-offers-item">
               <h3>Шоколадки даром!</h3>
               <p>
                 При покупке 2 кг пломбира, добавим в ваш заказ упаковку
@@ -221,7 +214,7 @@
                     <img
                       src="img/product-1.jpg"
                       width="267"
-                      heigth="267"
+                      height="267"
                       alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
                     />
                     <p>310 ₽<span>/кг</span></p>
@@ -242,7 +235,7 @@
                     <img
                       src="img/product-2.jpg"
                       width="267"
-                      heigth="267"
+                      height="267"
                       alt="Сливочно-кофейное с кусочками шоколада"
                     />
                     <p>380 ₽<span>/кг</span></p>
@@ -263,7 +256,7 @@
                     <img
                       src="img/product-3.jpg"
                       width="267"
-                      heigth="267"
+                      height="267"
                       alt="Сливочно-клубничное с присыпкой из белого шоколада"
                     />
                     <p>355 ₽<span>/кг</span></p>
@@ -284,7 +277,7 @@
                     <img
                       src="img/product-4.jpg"
                       width="267"
-                      heigth="267"
+                      height="267"
                       alt="Сливочное крем-брюле с карамельной подливкой"
                     />
                     <p>415 ₽<span>/кг</span></p>
@@ -349,7 +342,7 @@
                 </p>
                 <form
                   class="newsletter-subscription-form"
-                  action=""
+                  action="/"
                   method="post"
                 >
                   <label for="email"> </label>
@@ -368,8 +361,16 @@
         </div>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.320858716173536!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1583343593737!5m2!1sru!2sru"
+            width="100%"
+            height="430"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
           <img
-            src="img/map.png"
+            src="img/map.jpg"
             alt="магазин на карте"
             width="1200"
             height="430"
@@ -383,11 +384,14 @@
                 19/8, Санкт-Петербург</span
               >
             </p>
+            <p>Для заказов по телефону:</p>
             <p>
-              Для заказов по телефону:<br />
-              <span>812 450-25-25</span><br />(с 10 до 20 ежедневно)
+              <a href="tel:8 812 450-25-25" class="tel">8 812 450-25-25</a
+              ><br />(с 10 до 20 ежедневно)
             </p>
-            <a href="" class="button">Форма обратной связи</a>
+            <a href="writeus.html" class="button feedback-form-link"
+              >Форма обратной связи</a
+            >
           </div>
         </section>
       </main>
@@ -465,9 +469,9 @@
             </a>
           </li>
         </ul>
-        <div class="footer-informetion">
+        <div class="footer-information">
           <ul class="list-style">
-            <li><a href="#" class="link icone-heart">Для поставщиков</a></li>
+            <li><a href="#" class="link icon-heart">Для поставщиков</a></li>
             <li><a href="#" class="link">О производстве</a></li>
           </ul>
           <ul class="list-style">
@@ -476,7 +480,13 @@
           </ul>
         </div>
         <div class="copyright">
-          <div class="copyright-logo"></div>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"
+            ><img
+              src="img/logo-htmlacademy.svg"
+              alt="Логотип html Академии"
+              width="108"
+              height="37"
+          /></a>
           <p>
             Сделано в
             <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
@@ -485,9 +495,13 @@
           </p>
         </div>
       </footer>
-      <section class="feedback-form">
+      <section class="feedback-form-overlay">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <form action="" method="post">
+        <form
+          action="https://echo.htmlacademy.ru"
+          method="post"
+          class="feedback-form"
+        >
           <h3>Мы обязательно вам ответим!</h3>
           <button type="button" class="close">
             <span class="visually-hidden">Закрыть</span>
@@ -500,24 +514,21 @@
             placeholder="Имя Фамилия"
             class="input"
           />
-          <label for="email_2" class="visually-hidden" class="visually-hidden"
-            >email</label
-          >
+          <label for="email-feedback-form" class="visually-hidden">email</label>
           <input
             type="email"
             name="email"
-            id="email_2"
+            id="email-feedback-form"
             placeholder="email@example.com"
             class="input"
           />
-          <label for="appeal_text" class="visually-hidden"
+          <label for="appeal-text" class="visually-hidden"
             >Текст обращения</label
           >
           <textarea
-            name="appeal_text"
-            id="appeal_text"
-            cols=""
-            rows="5"
+            name="appeal-text"
+            id="appeal-text"
+            rows="6"
             placeholder="В свободной форме"
             class="input"
           ></textarea>
@@ -525,5 +536,6 @@
         </form>
       </section>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
