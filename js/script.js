@@ -33,14 +33,14 @@ link.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("feedback-form-show");
-  popup.classList.remove("feedback-form-error");
+  form.classList.remove("feedback-form-error");
 });
 form.addEventListener("submit", function(evt) {
   if (!userName.value || !email.value || !text.value) {
     evt.preventDefault();
-    popup.classList.remove("feedback-form-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("feedback-form-error");
+    form.classList.remove("feedback-form-error");
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add("feedback-form-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("userName", userName.value);
@@ -53,7 +53,7 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (popup.classList.contains("feedback-form-show")) {
       popup.classList.remove("feedback-form-show");
-      popup.classList.remove("feedback-form-error");
+      form.classList.remove("feedback-form-error");
     }
   }
 });
