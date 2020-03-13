@@ -1,11 +1,10 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   margin: 0;
+  min-width: 1200px;
 }
 .body-background {
   background-color: #849d8f;
@@ -190,21 +189,15 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-left: 10px;
 }
-.site-navigation-catalog {
+.site-navigation-item {
+  padding: 5px 16px 5px 12px;
   position: relative;
-}
-.site-navigation-item,
-.site-navigation-item:hover {
-  padding: 5px 12px;
 }
 .site-navigation-link {
   font-weight: 700;
@@ -228,7 +221,7 @@ input[type="radio"].visually-hidden {
   border-radius: 40px;
 }
 .site-navigation-visited a {
-  border-bottom: none;
+  border: none;
 }
 .site-navigation-catalog:hover .sub-menu {
   display: block;
@@ -292,9 +285,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
@@ -434,7 +424,7 @@ input[type="radio"].visually-hidden {
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  margin: 0;
+  margin: 0 2px 0 0;
 }
 .header-basket-inscription {
   text-decoration: none;
@@ -909,6 +899,10 @@ input[type="radio"].visually-hidden {
 .newsletter-subscription-form .button {
   padding: 9px 19px;
 }
+iframe {
+  width: 100%;
+  border: none;
+}
 .contacts {
   position: relative;
   width: 100%;
@@ -977,9 +971,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 18px 0 35px 0;
@@ -993,13 +984,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 185px;
   padding: 0;
-  margin-right: 237px;
+  margin-right: 226px;
 }
 .social-networks li {
   width: 35px;
   height: 35px;
+  margin-right: 14px;
 }
 .social-networks a {
   border-bottom: none;
@@ -1028,8 +1019,8 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 355px;
-  margin-top: 11px;
-  margin-right: 179px;
+  padding-top: 11px;
+  margin-right: 178px;
 }
 .footer-information ul {
   margin: 0;
