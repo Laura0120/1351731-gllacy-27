@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style-compressed.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="body-background">
     <header class="header container">
@@ -18,9 +18,9 @@
           <li
             class="site-navigation-item site-navigation-catalog site-navigation-visited"
           >
-            <a href="catalog.html" class="link site-navigation-link "
-              >Каталог</a
-            >
+            <a href="catalog.html" class="link site-navigation-link ">
+              Каталог
+            </a>
             <div class="sub-menu">
               <ul class="sub-menu-list list-style">
                 <li class="sub-menu-item">
@@ -50,7 +50,7 @@
         </ul>
         <div class="user-navigation">
           <div class="header-search user-navigation-item">
-            <div class="header-search-button">
+            <button type="button" class="header-search-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="17"
@@ -62,7 +62,7 @@
                   d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"
                 />
               </svg>
-            </div>
+            </button>
             <form action="/" method="get" class="header-search-form">
               <label for="search" class="visually-hidden">Поле поиска</label>
               <input
@@ -153,7 +153,7 @@
                       src="img/ice-cream-basket-1.jpg"
                       width="33"
                       height="33"
-                      alt=""
+                      alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
                     />
                   </td>
                   <td>Пломбир с апельсиновым джемом</td>
@@ -171,7 +171,7 @@
                       src="img/ice-cream-basket-2.jpg"
                       width="33"
                       height="33"
-                      alt=""
+                      alt="Сливочно-клубничное с присыпкой из белого шоколада"
                     />
                   </td>
                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
@@ -189,7 +189,7 @@
         </div>
       </nav>
       <p class="header-contact">
-        С 10 до 20, ежедневно<br />
+        С 10 до 20, ежедневно
         <a href="tel:8812450-25-25" class="tel">8 812 450-25-25</a>
       </p>
     </header>
@@ -211,32 +211,40 @@
         >
           <div class="filters-sorting">
             <label class="filter-item-label" for="sorting">Сортировка:</label>
-            <select
-              name="sorting"
-              size="1"
-              id="sorting"
-              class="filters-item filters-sorting-select"
-            >
-              <option value="popularity">по популярности</option>
-              <option value="inexpensive">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat-percentage">по жирности</option>
-            </select>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="11"
-              height="10"
-              viewBox="0 0 11 10"
-            >
-              <path fill="#FFF" d="M5.5 10L0 0h11" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5">
-              <path
-                fill="#333"
-                fill-rule="evenodd"
-                d="M.556-.013h7.802L4.515 5.012h-.123L.556-.013z"
-              />
-            </svg>
+            <div class="filters-sorting-select-wrapper">
+              <select
+                name="sorting"
+                size="1"
+                id="sorting"
+                class="filters-item filters-sorting-select"
+              >
+                <option value="popularity">по популярности</option>
+                <option value="inexpensive">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat-percentage">по жирности</option>
+              </select>
+              <svg
+                class="icon-down-dir"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+              >
+                <path fill="#FFF" d="M5.5 10L0 0h11" />
+              </svg>
+              <svg
+                class="icon-down-focus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="5"
+              >
+                <path
+                  fill="#333"
+                  fill-rule="evenodd"
+                  d="M.556-.013h7.802L4.515 5.012h-.123L.556-.013z"
+                />
+              </svg>
+            </div>
           </div>
           <div class="filters-price">
             <label class="filter-item-label">
@@ -244,7 +252,7 @@
             </label>
             <div class="range-controls filters-item">
               <div class="scale">
-                <div class="bar" style="margin-left: 19%; width: 48%"></div>
+                <div class="bar"></div>
               </div>
               <div class="toggle toggle-min"></div>
               <div class="toggle toggle-max"></div>
@@ -340,9 +348,7 @@
               </li>
             </ul>
           </div>
-          <div>
-            <button type="submit" class="filters-item">Применить</button>
-          </div>
+          <button type="submit" class="filters-item">Применить</button>
         </form>
       </section>
       <section>
@@ -360,9 +366,9 @@
               </a>
               <p>310<span>₽</span><span>/кг</span></p>
               <h3>
-                <a href="#" class="link"
-                  >Сливочное с апельсиновым джемом и цитрусовой стружкой</a
-                >
+                <a href="#" class="link">
+                  Сливочное с апельсиновым джемом и цитрусовой стружкой
+                </a>
               </h3>
               <button class="button">Быстрый просмотр</button>
             </div>
@@ -451,7 +457,7 @@
                   alt="Сливочно-черничное с цельными ягодами черники"
                 />
               </a>
-              <p>415<span>₽</span><span>/кг</span></p>
+              <p>410<span>₽</span><span>/кг</span></p>
               <h3>
                 <a href="#" class="link"
                   >Сливочно-черничное с цельными ягодами черники
@@ -472,9 +478,9 @@
               </a>
               <p>375<span>₽</span><span>/кг</span></p>
               <h3>
-                <a href="#" class="link"
-                  >Сливочно-лимонное с карамельной присыпкой</a
-                >
+                <a href="#" class="link">
+                  Сливочно-лимонное с карамельной присыпкой
+                </a>
               </h3>
               <button class="button">Быстрый просмотр</button>
             </div>
@@ -510,9 +516,9 @@
               </a>
               <p>440<span>₽</span><span>/кг</span></p>
               <h3>
-                <a href="#" class="link"
-                  >Сливочно-ванильное с кусочками шоколада</a
-                >
+                <a href="#" class="link">
+                  Сливочно-ванильное с кусочками шоколада
+                </a>
               </h3>
               <button class="button">Быстрый просмотр</button>
             </div>
@@ -546,9 +552,9 @@
               </a>
               <p>355<span>₽</span><span>/кг</span></p>
               <h3>
-                <a href="#" class="link"
-                  >Сливочное с кусочками черного шоколада</a
-                >
+                <a href="#" class="link">
+                  Сливочное с кусочками черного шоколада
+                </a>
               </h3>
               <button class="button">Быстрый просмотр</button>
             </div>
@@ -571,15 +577,23 @@
             </div>
           </li>
         </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-visited">
-            <a href="#">1</a>
-          </li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">5</a></li>
-        </ul>
+        <div class="pagination">
+          <button type="button" class="pagination-switch-back">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-visited">
+              <a href="#">1</a>
+            </li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">4</a></li>
+            <li class="pagination-item"><a href="#">5</a></li>
+          </ul>
+          <button type="button" class="pagination-switch-forwards">
+            <span class="visually-hidden">Вперёд</span>
+          </button>
+        </div>
       </section>
     </main>
     <footer class="footer container">
@@ -587,6 +601,8 @@
         <li>
           <a href="#" class="link">
             <svg
+              class="social-networks-icon"
+              alt="Твиттер"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -602,6 +618,8 @@
         <li>
           <a href="#" class="link">
             <svg
+              class="social-networks-icon"
+              alt="Инстаграм"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -624,6 +642,8 @@
         <li>
           <a href="#" class="link">
             <svg
+              class="social-networks-icon"
+              alt="Фейсбук"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -639,6 +659,8 @@
         <li>
           <a href="#" class="link">
             <svg
+              class="social-networks-icon"
+              alt="ВКонтакте"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -667,17 +689,18 @@
         </ul>
       </div>
       <div class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"
-          ><img
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img
             src="img/logo-htmlacademy.svg"
             alt="HTML Академия"
             width="108"
             height="37"
-        /></a>
+          />
+        </a>
         <p>
           Сделано в
-          <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
-            >HTML Academy © 2019
+          <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">
+            HTML Academy © 2019
           </a>
         </p>
       </div>

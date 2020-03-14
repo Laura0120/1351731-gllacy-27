@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style-compressed.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <input
@@ -32,9 +32,9 @@
         <nav class="header-navigation">
           <ul class="site-navigation list-style">
             <li class="site-navigation-item site-navigation-catalog">
-              <a href="catalog.html" class="link site-navigation-link"
-                >Каталог</a
-              >
+              <a href="catalog.html" class="link site-navigation-link">
+                Каталог
+              </a>
               <div class="sub-menu">
                 <ul class="sub-menu-list list-style">
                   <li class="sub-menu-item">
@@ -56,9 +56,9 @@
               </div>
             </li>
             <li class="site-navigation-item">
-              <a href="#" class="link site-navigation-link"
-                >Доставка и оплата</a
-              >
+              <a href="#" class="link site-navigation-link">
+                Доставка и оплата
+              </a>
             </li>
             <li class="site-navigation-item">
               <a href="#" class="link site-navigation-link">О Компании</a>
@@ -66,7 +66,7 @@
           </ul>
           <div class="user-navigation">
             <div class="header-search user-navigation-item">
-              <div class="header-search-button">
+              <button type="button" class="header-search-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="17"
@@ -78,7 +78,7 @@
                     d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"
                   />
                 </svg>
-              </div>
+              </button>
               <form action="/" method="get" class="header-search-form">
                 <label for="search" class="visually-hidden">Поле поиска</label>
                 <input
@@ -156,7 +156,7 @@
           </div>
         </nav>
         <p class="header-contact">
-          С 10 до 20, ежедневно<br />
+          С 10 до 20, ежедневно
           <a href="tel:8812450-25-25" class="tel">8 812 450-25-25</a>
         </p>
       </header>
@@ -224,9 +224,9 @@
                     <p>310<span>₽</span><span>/кг</span></p>
                   </a>
                   <h3>
-                    <a href="#" class="link"
-                      >Сливочное с апельсиновым джемом и цитрусовой стружкой</a
-                    >
+                    <a href="#" class="link">
+                      Сливочное с апельсиновым джемом и цитрусовой стружкой
+                    </a>
                   </h3>
                   <button class="button">
                     Быстрый просмотр
@@ -245,9 +245,9 @@
                     <p>380<span>₽</span><span>/кг</span></p>
                   </a>
                   <h3>
-                    <a href="#" class="link"
-                      >Сливочно-кофейное с кусочками шоколада</a
-                    >
+                    <a href="#" class="link">
+                      Сливочно-кофейное с кусочками шоколада
+                    </a>
                   </h3>
                   <button class="button">
                     Быстрый просмотр
@@ -372,23 +372,16 @@
           ></iframe>
           <div class="contacts-container">
             <div class="contacts-content">
-              <p>
-                Адрес главного офиса<br />
-                и офлайн-магазина:<br />
-                <span
-                  >ул. Большая Конюшенная<br />
-                  19/8, Санкт-Петербург</span
-                >
-              </p>
-              <p>
-                Для заказов по телефону: <br />
+              <p>Адрес главного офиса и офлайн-магазина:</p>
+              <h3>ул. Большая Конюшенная 19/8, Санкт-Петербург</h3>
+              <p>Для заказов по телефону:</p>
+              <h3>
                 <a href="tel:8812450-25-25" class="tel">8 812 450-25-25</a>
-                <br />
-                (с 10 до 20 ежедневно)
-              </p>
-              <a href="writeus.html" class="button feedback-form-link"
-                >Форма обратной связи</a
-              >
+              </h3>
+              <p>(с 10 до 20 ежедневно)</p>
+              <a href="writeus.html" class="button feedback-form-link">
+                Форма обратной связи
+              </a>
             </div>
           </div>
         </section>
@@ -398,6 +391,8 @@
           <li>
             <a href="#" class="link">
               <svg
+                class="social-networks-icon"
+                alt="Твиттер"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -413,6 +408,8 @@
           <li>
             <a href="#" class="link">
               <svg
+                class="social-networks-icon"
+                alt="Инстаграм"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -435,6 +432,8 @@
           <li>
             <a href="#" class="link">
               <svg
+                class="social-networks-icon"
+                alt="Фейсбук"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -450,6 +449,8 @@
           <li>
             <a href="#" class="link">
               <svg
+                class="social-networks-icon"
+                alt="ВКонтакте"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -478,13 +479,14 @@
           </ul>
         </div>
         <div class="copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"
-            ><img
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img
               src="img/logo-htmlacademy.svg"
               alt="HTML Академия"
               width="108"
               height="37"
-          /></a>
+            />
+          </a>
           <p>
             Сделано в
             <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
