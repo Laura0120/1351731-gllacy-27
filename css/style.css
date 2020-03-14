@@ -682,15 +682,15 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   width: 61px;
   height: 61px;
   background-image: url(../img/label-hit.png);
 }
 .product-item {
   position: relative;
-  width: 270px;
-  margin: 0 22px 38px 0;
+  width: 267px;
+  margin: 0 26px 38px 0;
   text-align: center;
 }
 .product-item:nth-child(4n) {
@@ -728,11 +728,15 @@ input[type="radio"].visually-hidden {
 .product-item:hover .product-item-overlay {
   display: block;
 }
+.product-item:hover .product-item-content {
+  position: relative;
+  z-index: 3;
+}
 .product-item-overlay {
   position: absolute;
   top: -6px;
   left: -13px;
-  z-index: -1;
+  z-index: 2;
   display: none;
   width: calc(100% + 26px);
   height: calc(100% + 80px);
