@@ -117,7 +117,7 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     color: #ffffff;
     -text-shadow: 0 2px 5px rgba(172, 16, 0, 0.64);
-    webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     background: #f26843;
@@ -847,8 +847,8 @@ input[type="radio"].visually-hidden {
 .product-item-overlay button {
     position: absolute;
     left: 43px;
-    bottom: 23px;
-    padding: 9.5px 17px;
+    bottom: 22px;
+    padding: 10px 17px;
 }
 
 .features {
@@ -1686,7 +1686,7 @@ li .icon-heart {
 }
 
 .filter-input:focus+label::before {
-    border: solid 2px rgba(46, 136, 228, 0.52);
+    outline: solid 2px rgba(46, 136, 228, 0.52);
 }
 
 .filter-input:disabled+label::before {
@@ -1797,13 +1797,14 @@ li .icon-heart {
     height: 12px;
     padding: 0;
     background: none;
-    background-image: url(../img/icon-pagination-first.svg);
+    background-image: url(../img/icon-pagination.svg);
     background-repeat: no-repeat;
     border: none;
     opacity: 50%;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+    cursor: pointer;
 }
 
 .pagination-switch-forwards {
@@ -1811,7 +1812,8 @@ li .icon-heart {
     height: 12px;
     padding: 0;
     background: none;
-    background-image: url(../img/icon-pagination-first.svg);
+    background-image: url(../img/icon-pagination.svg);
     background-repeat: no-repeat;
     border: none;
+    cursor: pointer;
 }
