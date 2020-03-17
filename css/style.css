@@ -322,6 +322,9 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-item {
     margin-right: 10px;
+}
+
+.user-navigation  button {
     cursor: pointer;
 }
 
@@ -707,6 +710,10 @@ input[type="radio"].visually-hidden {
 #product-2:checked~.site-wrapper label[for="product-2"],
 #product-3:checked~.site-wrapper label[for="product-3"] {
     background-color: #ffffff;
+}
+
+.slider-controls label:hover {
+    background-color: rgba(248,247,244,0.4);
 }
 
 .special-offers {
@@ -1545,7 +1552,7 @@ li .icon-heart {
 .icon-down-dir {
     position: absolute;
     pointer-events: none;
-    top: 37px;
+    top: 35px;
     right: 15px;
 }
 
